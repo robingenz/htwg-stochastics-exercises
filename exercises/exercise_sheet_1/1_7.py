@@ -11,7 +11,7 @@ def median(values: list) -> int:
 
 
 def quantile(values: list, q: float) -> int:
-    return np.quantile(values, q)
+    return np.quantile(values, q, method="averaged_inverted_cdf")
 
 
 def standard_deviation(values: list) -> int:

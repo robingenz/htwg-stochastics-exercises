@@ -5,23 +5,30 @@ from scipy.stats import iqr
 def mean(values: list) -> int:
     return np.mean(values)
 
+
 def median(values: list) -> int:
     return np.median(values)
+
 
 def mode(values: list) -> int:
     return max(set(values), key=values.count)
 
+
 def quantile(values: list, q: float) -> int:
-    return np.quantile(values, q)
+    return np.quantile(values, q, method="averaged_inverted_cdf")
+
 
 def variance(values: list) -> int:
     return np.var(values)
 
+
 def standard_deviation(values: list) -> int:
     return np.std(values)
 
+
 def interquartile_range(values: list) -> int:
-    return iqr(values)
+    return iqr(values, interpolation="averaged_inverted_cdf")
+
 
 def span(values: list) -> int:
     max_value = max(values)
@@ -30,7 +37,7 @@ def span(values: list) -> int:
 
 
 def main():
-    values = [3, 4, 5, 1, 5, 2, 1, 3, 1, 3]
+    values = [1, 1, 1, 2, 3, 3, 3, 4, 5, 5]
     print(f"Arithmetisches Mittel: {mean(values)}")
     print(f"Median: {median(values)}")
     print(f"Modalwert: {mode(values)}")
