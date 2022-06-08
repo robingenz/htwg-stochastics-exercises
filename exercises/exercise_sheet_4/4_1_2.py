@@ -16,6 +16,7 @@ def standard_deviation(values: list) -> int:
 
 
 def main():
+    # values = [1] * 4 + [2] + [3] * 3
     values = [1, 1, 1, 1, 2, 3, 3, 3]
     print(f"Erwartungswert: {expected_value(values)}")
     print(f"Varianz: {variance(values)}")
