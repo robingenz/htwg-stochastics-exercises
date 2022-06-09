@@ -3,9 +3,7 @@ from statistics import covariance as cov
 
 
 def expected_value(values: list) -> int:
-    unique, counts = np.unique(np.asarray(values), return_counts=True)
-    weights = np.asarray(list(map(lambda count: count / len(values), counts)))
-    return (unique * weights).sum() / weights.sum()
+    return np.average(values)
 
 
 def variance(values: list) -> int:
