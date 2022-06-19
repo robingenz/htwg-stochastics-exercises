@@ -14,7 +14,7 @@ def covariance(values1: list, values2: list) -> float:
     return cov(values1, values2)
 
 
-def correlation_coefficient(values1: list, values2: list) -> int:
+def correlation_coefficient(values1: list, values2: list) -> float:
     print(mean(values1))
     print(mean(values2))
     return covariance(values1, values2) / (standard_deviation(values1) * standard_deviation(values2))

@@ -2,15 +2,15 @@ import numpy as np
 from statistics import covariance as cov
 
 
-def expected_value(values: list) -> int:
+def expected_value(values: list) -> float:
     return np.average(values)
 
 
-def variance(values: list) -> int:
+def variance(values: list) -> float:
     return np.var(values)
 
 
-def covariance(values1: list, values2: list) -> int:
+def covariance(values1: list, values2: list) -> float:
     return cov(values1, values2)
 
 

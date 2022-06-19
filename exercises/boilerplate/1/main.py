@@ -3,14 +3,14 @@ def get_input() -> list:
         return [int(l) for l in f.readlines()]
 
 
-def part1(vals: list) -> int:
+def part1(vals: list) -> float:
     for idx_i, i in enumerate(vals):
         for j in vals[idx_i+1:]:
             if i + j == 2020:
                 return i * j
 
 
-def part2(vals: list) -> int:
+def part2(vals: list) -> float:
     for idx_i, i in enumerate(vals):
         for idx_j, j in enumerate(vals[idx_i+1:]):
             for o in vals[idx_j+1:]:

@@ -1,15 +1,15 @@
 import numpy as np
 
 
-def expected_value(values: list) -> int:
+def expected_value(values: list) -> float:
     return np.average(values)
 
 
-def variance(values: list) -> int:
+def variance(values: list) -> float:
     return np.var(values)
 
 
-def standard_deviation(values: list) -> int:
+def standard_deviation(values: list) -> float:
     return np.std(values)
 
 

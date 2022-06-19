@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def median(values: list) -> int:
+def median(values: list) -> float:
     return np.median(values)
 
 

@@ -2,7 +2,7 @@ from scipy.stats import binom
 import numpy as np
 
 
-def expected_value(values: list) -> int:
+def expected_value(values: list) -> float:
     return np.average(values)
 
 
