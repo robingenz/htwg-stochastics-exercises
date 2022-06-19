@@ -19,11 +19,11 @@ def quantile(values: list, q: float) -> int:
 
 
 def variance(values: list) -> int:
-    return np.var(values)
+    return np.var(values, ddof=1)
 
 
 def standard_deviation(values: list) -> int:
-    return np.std(values)
+    return np.std(values, ddof=1)
 
 
 def interquartile_range(values: list) -> int:
