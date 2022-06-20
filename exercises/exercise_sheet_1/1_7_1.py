@@ -15,7 +15,7 @@ def quantile(values: list, q: float) -> float:
 
 
 def standard_deviation(values: list) -> float:
-    return np.std(values)
+    return np.std(values, ddof=1)
 
 
 def main():
