@@ -3,6 +3,10 @@ from scipy.stats import iqr
 from statistics import covariance as cov
 
 
+def occurrences(values: list) -> dict:
+    return dict((x, values.count(x)) for x in set(values))
+
+
 def mean(values: list) -> float:
     return np.mean(values)
 
@@ -46,14 +50,18 @@ def correlation_coefficient(values1: list, values2: list) -> float:
 
 
 def main():
-    values1 = [1, 2, 3, 4]
-    values2 = [1, 2, 3, 4]
+    values1 = [1.3, 5, 1.3, 2.7, 4, 3.7]
+    values2 = [2, 3, 1, 2, 1, 2.7]
+    print(f"Absolute Häufigkeit: {occurrences(values1)}")
     print(f"Arithmetisches Mittel: {mean(values1)}")
     print(f"Median: {median(values1)}")
     print(f"Modalwert: {mode(values1)}")
-    print(f"25%-Quantil: {quantile(values1, 0.25)}")
-    print(f"30%-Quantil: {quantile(values1, 0.3)}")
-    print(f"66%-Quantil: {quantile(values1, 0.66)}")
+    q1 = 0.9
+    print(f"{q1*100}%-Quantil: {quantile(values1, q1)}")
+    q2 = 0.25
+    print(f"{q2*100}%-Quantil: {quantile(values1, q2)}")
+    q3 = 0.75
+    print(f"{q3*100}%-Quantil: {quantile(values1, q3)}")
     print(f"Varianz: {variance(values1)}")
     print(f"Standardabweichung: {standard_deviation(values1)}")
     print(f"Interquartilabstand: {interquartile_range(values1)}")
