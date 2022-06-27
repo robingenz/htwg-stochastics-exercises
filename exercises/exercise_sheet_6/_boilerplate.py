@@ -57,18 +57,21 @@ def norm(mu: float, sig: float, k: float) -> float:
 
 
 def main():
+    print()
     # Wahrscheinlichtkeit, dass Eve aus einem zufälligen Intervall zwischen 5 Sekunden und 5 Minuten
     # 1. höchstens 1 Minute zum Lesen eines Tweets benötigt (≤)
     # 2. mehr als 1 Minute zum Lesen eines Tweets benötigt (>)
-    uniform(5, 300, 60)
+    uniform(1, , 0)
+
     # Wahrscheinlichtkeit, dass täglich genutzte Laufschuhe, die im Mittel 18 Monate halten,
     # 1. höchstens 15 Monate halten (≤)
     # 2. länger als 15 Monate halten (>)
-    expon(1/18, 15)
+    # expon(1/18, 15)
+
     # Wahrscheinlichtkeit, dass ein zufällig ausgewählter Mann bei Größe ∼ N(180.3, 7.17)
     # 1. höchstens 1.75 m groß ist (≤)
     # 2. größer als 1.75 m groß ist (>)
-    norm(180.3, 7.17, 175)
+    # norm(180.3, 7.17, 175)
 
 
 if __name__ == "__main__":
