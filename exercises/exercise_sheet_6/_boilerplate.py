@@ -61,7 +61,7 @@ def main():
     # Wahrscheinlichtkeit, dass Eve aus einem zufälligen Intervall zwischen 5 Sekunden und 5 Minuten
     # 1. höchstens 1 Minute zum Lesen eines Tweets benötigt (≤)
     # 2. mehr als 1 Minute zum Lesen eines Tweets benötigt (>)
-    uniform(1, , 0)
+    # uniform(5, 300, 60)
 
     # Wahrscheinlichtkeit, dass täglich genutzte Laufschuhe, die im Mittel 18 Monate halten,
     # 1. höchstens 15 Monate halten (≤)
