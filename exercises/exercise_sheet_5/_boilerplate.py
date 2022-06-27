@@ -88,28 +88,33 @@ def poisson(p: float, k: int) -> float:
 
 
 def main():
+    print()
     # Wurf einer Münze mit 50% Erfolgswahrscheinlichkeit auf Seite 1 (z.B. Kopf)
-    bernoulli(0.5, 1)
+    # bernoulli(0.5, 1)
+
     # Wahrscheinlichtkeit, dass eine Snowboarderin bei einer Erfolgwahrscheinlichkeit von 40%
     # 1. im 2ten Versuche eine erfolgreiche Abfahrt absolviert (=)
     # 2. höchstens 2 Versuche bis zur ersten Abfahrt braucht (≤)
     # 3. mehr als 2 Versuche bis zur ersten Abfahrt braucht (>)
-    geom(0.4, 2)
+    # geom(0.4, 2)
+
     # Wahrscheinlichkeit, dass Britta bei einer Erfolgwahrscheinlichkeit von 25% von 5 Schneebällen
     # 1. genau 2 mal trifft
     # 2. höchstens 2 mal trifft
     # 3. mehr als 2 mal trifft
-    binomial(5, 0.25, 2)
+    # binomial(5, 0.25, 2)
+
     # Wahrscheinlichkeit, dass bei einem 10-köpfigen Orga-Team aus einer Gruppe von 70 Studierenden, von denen 45 aus der Fakultät IN kommen,
     # 1. genau 10-IN Studierende mitorganisieren
     # 2. höchstens 10-IN Studierende mitorganisieren
     # 3. mehr als 10-IN Studierende mitorganisieren
-    hypergeom(10, 45, 70, 10)
+    # hypergeom(10, 45, 70, 10)
+
     # Wahrscheinlichkeit, dass eine Maschine mit ca. 3 Ausfällen pro Woche
     # 1. diese Woche 2 mal ausfällt
     # 2. diese Woche höchstens 2 mal ausfällt
     # 3. diese Woche mindestens 2 mal ausfällt
-    poisson(3, 2)
+    # poisson(3, 2)
 
 
 if __name__ == "__main__":
