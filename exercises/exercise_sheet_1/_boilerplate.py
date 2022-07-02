@@ -15,8 +15,9 @@ def median(values: list) -> float:
     return np.median(values)
 
 
-def mode(values: list) -> float:
-    return max(set(values), key=values.count)
+def mode(values: list) -> list:
+    maxCount = values.count(max(set(values), key=values.count))
+    return set([value for value in values if values.count(value) == maxCount])
 
 
 def quantile(values: list, q: float) -> float:
