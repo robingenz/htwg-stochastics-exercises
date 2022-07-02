@@ -65,7 +65,7 @@ def main():
     # 2. mindestens 1 Minute zum Lesen eines Tweets benötigt (>)
     # uniform(5, 300, 60, 0.1)
 
-    # Wahrscheinlichtkeit, dass täglich genutzte Laufschuhe, die im Mittel 18 Monate halten,
+    # Wahrscheinlichtkeit, dass täglich genutzte Laufschuhe, die im Mittel (Erwartungswert) 18 Monate halten,
     # 1. höchstens 15 Monate halten (≤)
     # 2. mindestens 15 Monate halten (>)
     # expon(1/18, 15, 0.1)
