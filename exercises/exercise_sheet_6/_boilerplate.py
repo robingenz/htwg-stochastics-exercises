@@ -13,7 +13,7 @@ def uniform(a: float, b: float, k: float, q: float) -> float:
     print(f"Gleichverteilung-Verteilungsfunktion (X ≤ {k}): {instance.cdf(k)}")
     print(
         f"Gleichverteilung-Verteilungsfunktion (X ≥ {k}): {instance.sf(k)}")
-    print(f"Gleichverteilung-Quantil: {instance.ppf(q)}")
+    print(f"Gleichverteilung-{q*100}%-Quantil: {instance.ppf(q)}")
     print(f"Gleichverteilung-Erwartungswert: {instance.mean()}")
     print(f"Gleichverteilung-Varianz: {instance.var()}")
     print(f"Gleichverteilung-Standardabweichung: {instance.std()}")
@@ -32,7 +32,7 @@ def expon(lamb: float, k: float, q: float) -> float:
         f"Exponentialverteilung-Verteilungsfunktion (X ≤ {k}): {instance.cdf(k)}")
     print(
         f"Exponentialverteilung-Verteilungsfunktion (X ≥ {k}): {instance.sf(k)}")
-    print(f"Exponentialverteilung-Quantil: {instance.ppf(q)}")
+    print(f"Exponentialverteilung-{q*100}%-Quantil: {instance.ppf(q)}")
     print(f"Exponentialverteilung-Erwartungswert: {instance.mean()}")
     print(f"Exponentialverteilung-Varianz: {instance.var()}")
     print(f"Exponentialverteilung-Standardabweichung: {instance.std()}")
@@ -51,7 +51,7 @@ def norm(mu: float, sig: float, k: float, q: float) -> float:
     print(f"Normalverteilung-Verteilungsfunktion (X ≤ {k}): {instance.cdf(k)}")
     print(
         f"Normalverteilung-Verteilungsfunktion (X ≥ {k}): {instance.sf(k)}")
-    print(f"Normalverteilung-Quantil: {instance.ppf(q)}")
+    print(f"Normalverteilung-{q*100}%-Quantil: {instance.ppf(q)}")
     print(f"Normalverteilung-Erwartungswert: {instance.mean()}")
     print(f"Normalverteilung-Varianz: {instance.var()}")
     print(f"Normalverteilung-Standardabweichung: {instance.std()}")
