@@ -54,23 +54,23 @@ def main():
     values1 = [1.3, 5, 1.3, 2.7, 4, 3.7]
     values2 = [2, 3, 1, 2, 1, 2.7]
     print(f"Absolute Häufigkeit: {occurrences(values1)}")
-    print(f"Arithmetisches Mittel: {mean(values1)}")
-    print(f"Median: {median(values1)}")
-    print(f"Modalwert: {mode(values1)}")
-    q1 = 0.9
-    print(f"{q1*100}%-Quantil: {quantile(values1, q1)}")
-    q2 = 0.25
-    print(f"{q2*100}%-Quantil: {quantile(values1, q2)}")
+    print(f"Arithmetisches Mittel (x̄): {mean(values1)}")
+    print(f"Median (˜x): {median(values1)}")
+    print(f"Modalwert (x_m): {mode(values1)}")
+    q1 = 0.25
+    print(f"{q1*100}%-Quantil (˜x_{q1}): {quantile(values1, q1)}")
+    q2 = 0.5
+    print(f"{q2*100}%-Quantil (˜x_{q2}): {quantile(values1, q2)}")
     q3 = 0.75
-    print(f"{q3*100}%-Quantil: {quantile(values1, q3)}")
-    print(f"Varianz: {variance(values1)}")
-    print(f"Standardabweichung: {standard_deviation(values1)}")
-    print(f"Interquartilabstand: {interquartile_range(values1)}")
-    print(f"Spannweite: {span(values1)}")
+    print(f"{q3*100}%-Quantil (˜x_{q3}): {quantile(values1, q3)}")
+    print(f"Varianz (s^2): {variance(values1)}")
+    print(f"Standardabweichung (s): {standard_deviation(values1)}")
+    print(f"Interquartilabstand (I): {interquartile_range(values1)}")
+    print(f"Spannweite (R): {span(values1)}")
     print(
-        f"Kovarianz: {covariance(values1, values2)}")
+        f"Kovarianz (s_x,y): {covariance(values1, values2)}")
     print(
-        f"Korrelationskoeffizient: {correlation_coefficient(values1, values2)}")
+        f"Korrelationskoeffizient (r_x,y): {correlation_coefficient(values1, values2)}")
 
 
 if __name__ == "__main__":
