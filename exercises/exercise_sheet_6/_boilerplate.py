@@ -20,13 +20,13 @@ def uniform(a: float, b: float, k: float, q: float) -> float:
     print("----")
 
 
-def expon(lamb: float, k: float, q: float) -> float:
+def expon(e: float, k: float, q: float) -> float:
     """
-    lamb: Ankunftsrate der Ereignisse
+    e: Erwartungswert
     k: Ausgewählter Wert
     q: Quantil-Wert (z.B. 0.75)
     """
-    instance = stats.expon(loc=0, scale=1/lamb)
+    instance = stats.expon(loc=0, scale=e)
     print("----")
     print(
         f"Exponentialverteilung-Verteilungsfunktion (X ≤ {k}): {instance.cdf(k)}")
@@ -68,7 +68,7 @@ def main():
     # Wahrscheinlichtkeit, dass täglich genutzte Laufschuhe, die im Mittel (Erwartungswert) 18 Monate halten,
     # 1. höchstens 15 Monate halten (≤)
     # 2. mindestens 15 Monate halten (>)
-    # expon(1/18, 15, 0.1)
+    # expon(18, 15, 0.1)
 
     # Wahrscheinlichtkeit, dass ein zufällig ausgewählter Mann bei Größe ∼ N(180.3, 7.17)
     # 1. höchstens 1.75 m groß ist (≤)
