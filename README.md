@@ -2,7 +2,9 @@
 
 🎓 Scripts for performing calculations for the lecture "Stochastik" at HTWG. 
 
-Example: 
+## Usage
+
+**Example**: 
 
 ```
 python exercises/exercise_sheet_1/_boilerplate.py
