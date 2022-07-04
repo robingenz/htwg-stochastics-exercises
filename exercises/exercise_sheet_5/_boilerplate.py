@@ -112,7 +112,7 @@ def main():
     # 1. genau 2 mal trifft
     # 2. höchstens 2 mal trifft
     # 3. mehr als 2 mal trifft
-    # binomial(11, 0.55, 8, 0.1)
+    # binomial(5, 0.25, 2, 0.1)
 
     # Wahrscheinlichkeit, dass bei einem 10-köpfigen Orga-Team aus einer Gruppe von 70 Studierenden, von denen 45 aus der Fakultät IN kommen,
     # 1. genau 10-IN Studierende mitorganisieren
